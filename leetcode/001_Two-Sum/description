@@ -1,0 +1,15 @@
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+给一串数，返回两个数的index，如果这两个数满足和等于target
+
+Examples
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+
+1. 二重循环做个判断 O(n^2)
+2. 哈希 存的是<nums[index], index> 进行一次遍历 每次查到的数如果没在Catalog中出现则加进来
+然后看target-num[i]是否在Catalog中  O(nlogn)

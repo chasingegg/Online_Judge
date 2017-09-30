@@ -1,0 +1,14 @@
+Given a string, find the length of the longest substring without repeating characters.
+
+求最长无重复字母的子串长度
+
+Examples:
+
+Given "abcabcbb", the answer is "abc", which the length is 3.
+
+Given "bbbbb", the answer is "b", with the length of 1.
+
+Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+
+1. dp问题 f[i]为第i个字符为止的最长无重复字母子串的长度，接下来主要第i+1个字符是否出现过来决定是不是要加进去。不加的话直接就是f[i],如果加则要考虑第i+1个字符开始往回找得到一个len 然后求出max(f[i],len)即可。
+2. 比较高端的做法就不用开数组了

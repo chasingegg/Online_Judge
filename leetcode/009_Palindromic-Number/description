@@ -1,0 +1,5 @@
+Determine whether an integer is a palindrome. Do this without extra space
+
+判断一个int型整数是否是回文数，这道题真是蛮简单的。。
+但是还是要有trick，比较好的做法是从尾巴开始反转这个数 反转到中间位置就可以和前半部分进行比较
+（要是让我原始的方法，肯定又是要拿一个数组来存这个整型数，然后在进行比较了）

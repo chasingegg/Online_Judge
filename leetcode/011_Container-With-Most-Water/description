@@ -1,0 +1,8 @@
+Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+
+Note: You may not slant the container and n is at least 2.
+
+给n个整数a1, a2, … an, 分别画垂直于x轴的线段(i, ai)到(i, 0) 两条line连上x轴可看做组成了一个容器，现在要找出能放最多水的容器。
+
+很简单的做法是算出所有的情况嘛这个按下不表
+有一种很自然的优化就是先看头和尾组成的容器，然后向里压缩，只有高度比原先高的组合是有必要计算一下看是否更大，其余组合可以直接跳过，这样一圈下来头和尾碰到就结束。

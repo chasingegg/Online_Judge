@@ -1,0 +1,20 @@
+Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+
+找出一个字符串中最长的回文子串
+
+Example:
+
+Input: "babad"
+
+Output: "bab"
+
+Note: "aba" is also a valid answer.
+Example:
+
+Input: "cbbd"
+
+Output: "bb"
+
+1. 使用for loop来Check是否满足条件
+2. 使用dp[i][j]来记录i,j这个子串是否是回文子串，需要满足s[i] == s[j]同时要保证内部也是回文串即dp[i+1][j-1]满足回文条件
+string.substr(left, length)取子串

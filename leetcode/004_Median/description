@@ -1,0 +1,20 @@
+There are two sorted arrays nums1 and nums2 of size m and n respectively.
+
+Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+
+给两个已经排好序的数组，要求返回中位数
+
+Example 1:
+nums1 = [1, 3]
+nums2 = [2]
+
+The median is 2.0
+Example 2:
+nums1 = [1, 2]
+nums2 = [3, 4]
+
+The median is (2 + 3)/2 = 2.5
+
+1. 自己的想法就是类似于做一次归并的操作，时间复杂度应该是O(m+n)，但是在leetcode上也能过
+2. 类似于BinarySearch 要想得到第k小的数，在两个数组里分别找k/2小的数，两个数组为a, b a[mid] < b[mid] keep a[right]+b[left] if a[mid]>b[mid keep a[right]+b[left]
+然后这里遇到了一个bug vector里面的size()返回的是unsigned int,假如size是0，-1的话会overflow，所以要先转一下int才行。

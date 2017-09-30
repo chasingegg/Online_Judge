@@ -1,0 +1,5 @@
+Write a function to find the longest common prefix string amongst an array of strings.
+
+给一个字符串数组，要求找到最长公共前缀
+
+感觉做的比较暴力，以第一个字符串作为基准一个一个字符进行比较是否是公共的。

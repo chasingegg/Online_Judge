@@ -1,0 +1,26 @@
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+
+The matching should cover the entire input string (not partial).
+
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+
+Some examples:
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "a*") → true
+isMatch("aa", ".*") → true
+isMatch("ab", ".*") → true
+isMatch("aab", "c*a*b") → true
+
+表达式匹配，.可以表示单个任意字符
+* matches zero or more of the preceding element这句话要好好理解一下，a*这样可以表示空，aa,或者一长串aaa..  这里还有一个特殊情况，.*可以表示..,这里两个点不一定是一样的单个字符可以表示ab这样的
+
+解答是DP来做，DP[i][j]表示s中前i个字符和p中前j个字符的匹配情况
+s[i] == p[j]: dp[i][j] = dp[i-1][j-1]
+p[j] == ‘.’: dp[i][j] = dp[i-1][j-1]
+p[j] == ‘*’: 1. p[j-1] != s[i] && p[j-1] != ‘.’: dp[i][j] = dp[i][j-2]
+             2. p[j-1] == s[i] || p[j-1] == ‘.’: 
+			dp[i][j] = dp[i-1][j] || dp[i][j-1] || dp[i][j-2] 
