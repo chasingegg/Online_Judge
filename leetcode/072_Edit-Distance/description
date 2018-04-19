@@ -1,0 +1,6 @@
+Given two words word1 and word2,最少要多少步把word1变到word2
+有三种操作：1. 插入一个字母 2. 删除一个字母 3. 替换一个字母
+
+传说中的hard题，根本不行。似乎edit distance这个问题还很有用，Stanford有一个
+slides专门讲这个，http://web.stanford.edu/class/cs124/lec/med.pdf
+看解答基本是DP来做的
