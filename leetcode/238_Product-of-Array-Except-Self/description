@@ -1,0 +1,14 @@
+Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+给出一个数组，对每一个数，求总乘积除去该数所得的结果，建议不用除法
+
+Example:
+
+Input:  [1,2,3,4]
+Output: [24,12,8,6]
+Note: Please solve it without division and in O(n).
+
+Follow up:
+Could you solve it with constant space complexity? (The output array does not count as extra space for the purpose of space complexity analysis.)
+
+---------------
+真的很不medium，首先res[i]记录的是index为i的数之前的数的乘积，然后从后往前乘

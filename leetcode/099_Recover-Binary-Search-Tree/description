@@ -1,0 +1,49 @@
+Two elements of a binary search tree (BST) are swapped by mistake.
+
+Recover the tree without changing its structure.
+二叉查找树中有两个元素被错误地调换了，
+
+Example 1:
+
+Input: [1,3,null,null,2]
+
+   1
+  /
+ 3
+  \
+   2
+
+Output: [3,1,null,null,2]
+
+   3
+  /
+ 1
+  \
+   2
+Example 2:
+
+Input: [3,1,4,null,null,2]
+
+  3
+ / \
+1   4
+   /
+  2
+
+Output: [2,1,4,null,null,3]
+
+  2
+ / \
+1   4
+   /
+  3
+Follow up:
+
+A solution using O(n) space is pretty straight forward.
+Could you devise a constant space solution?
+
+----------------
+1. O(n)的做法是中序遍历存下所有节点，按照节点值的大小进行排序，把之前存下来的节点按照新的
+节点值赋好值。
+2. 在第一种方案基础上，标记两个需要调换的节点first和second，到时候调换一下即可
+3. O(1)空间复杂度，Morris算法，之后再看

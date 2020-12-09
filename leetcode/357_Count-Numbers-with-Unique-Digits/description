@@ -1,0 +1,11 @@
+Given a non-negative integer n, count all numbers with unique digits, x, where 0 ≤ x < 10n.
+给出1到10^n的满足某条件的数的个数，条件为该数的所有数字没有重复
+
+Example:
+
+Input: 2
+Output: 91 
+Explanation: The answer should be the total numbers in the range of 0 ≤ x < 100, 
+             excluding 11,22,33,44,55,66,77,88,99
+
+-------------

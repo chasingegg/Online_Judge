@@ -1,0 +1,21 @@
+Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
+
+Note: The input string may contain letters other than the parentheses ( and ).
+给出一个字符串，要求去掉最小的括号，让这个括号是正确的
+
+Example 1:
+
+Input: "()())()"
+Output: ["()()()", "(())()"]
+Example 2:
+
+Input: "(a)())()"
+Output: ["(a)()()", "(a())()"]
+Example 3:
+
+Input: ")("
+Output: [""]
+
+-----------
+使用bfs判断去掉某个括号以后是否满足条件，因为要求要去掉的括号最少，
+所以用bfs

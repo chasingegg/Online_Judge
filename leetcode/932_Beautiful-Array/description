@@ -1,0 +1,21 @@
+For some fixed N, an array A is beautiful if it is a permutation of the integers 1, 2, ..., N, such that:
+
+For every i < j, there is no k with i < k < j such that A[k] * 2 = A[i] + A[j].
+
+Given N, return any beautiful array A.  (It is guaranteed that one exists.)
+一个数组里的任何两个数a[i],a[j]之间某个数a[k]。不存在a[k]*2=a[i]+[aj]
+ 
+
+Example 1:
+
+Input: 4
+Output: [2,1,4,3]
+Example 2:
+
+Input: 5
+Output: [3,1,2,5,4]
+
+-----------
+遇到这种题目就只能缴械投降了
+a, a+d, a+2d, ..., a+(n-1)*d
+拆解成(a, a+2d, ...  )  (a+d, a+3d, ...)

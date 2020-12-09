@@ -1,0 +1,18 @@
+Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
+给出string S和T，返回包含T中所有字母的S的最小子串
+
+Example:
+
+Input: S = "ADOBECODEBANC", T = "ABC"
+Output: "BANC"
+Note:
+
+If there is no such window in S that covers all characters in T, return the empty string "".
+If there is such window, you are guaranteed that there will always be only one unique minimum window in S.
+
+---------------
+滑动窗口，固定left指针，right指针一直往后移动直到包含所有T中的字符，
+然后再把left向右移动一格
+具体实现还是很难，f[]记录每个字母出现的次数，每移动右边指针，f[]减一，
+到数以后，如果左指针指的地方f[]小于0的话，把左边指针往右移，并把f[]
+加1，这时候左指针指向的一定是一个有效的字母，记录下当前的最短串，

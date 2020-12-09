@@ -1,0 +1,15 @@
+Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary representation and return them as an array.
+
+给一个非负整数num，要求返回小于等于num的所有自然数表示成二进制形式以后1的数量
+
+Example 1:
+
+Input: 2
+Output: [0,1,1]
+Example 2:
+
+Input: 5
+Output: [0,1,1,2,1,2]
+
+--------------------
+dp问题，但转移方程很难找，原数和原数/2找到关系

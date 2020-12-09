@@ -1,0 +1,27 @@
+Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
+
+(i.e.,  [0,1,2,4,5,6,7] might become  [4,5,6,7,0,1,2]).
+
+Find the minimum element.
+
+The array may contain duplicates.
+有序的数组，按照某个pivot旋转了一下，找到最小的元素，其中可能有重复元素
+
+Example 1:
+
+Input: [1,3,5]
+Output: 1
+Example 2:
+
+Input: [2,2,2,0,1]
+Output: 0
+Note:
+
+This is a follow up problem to Find Minimum in Rotated Sorted Array.
+Would allow duplicates affect the run-time complexity? How and why?
+
+------------------
+二分查找里的坑真的太多了，什么时候要带等号根本不知道
+注意和153题的微小差别
+二分查找中的left和right，求mid的时候left+(right-left)/2，这时候mid有可能和left相等，
+但如果停止条件设置left<right，那么mid一定小于right

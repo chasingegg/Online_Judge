@@ -1,0 +1,19 @@
+Given a positive integer n, break it into the sum of at least two positive integers and maximize the product of those integers. Return the maximum product you can get.
+把一个整数拆成若干个数的和，使这几个数的乘积最大
+Note: You may assume that n is not less than 2 and not larger than 58.
+
+Example 1:
+
+Input: 2
+Output: 1
+Explanation: 2 = 1 + 1, 1 × 1 = 1.
+Example 2:
+
+Input: 10
+Output: 36
+Explanation: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36.
+
+---------------
+简单dp，但是要注意的是，不能直接用前面的dp数组中的结果，因为
+前面的结果是一定拆分成两个及以上的数，但有可能我们直接用他的原值。
+比如dp[2] = 1, 但是直接用2这个结果反而更大一些

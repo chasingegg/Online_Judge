@@ -1,0 +1,21 @@
+Given an array which consists of non-negative integers and an integer m, you can split the array into m non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these m subarrays.
+把长度为n的数组分成m个subarray，使得这m个subarray各自和的最大值最小
+
+------------------
+Example
+Input:
+nums = [7,2,5,10,8]
+m = 2
+
+Output:
+18
+
+Explanation:
+There are four ways to split nums into two subarrays.
+The best way is to split it into [7,2,5] and [10,8],
+where the largest sum among the two subarrays is only 18.
+
+------------------
+1. dp可以做， dp[i][j]表示i个数分成j组的情况 但是复杂度会比较高，O(N^3)
+
+2. 二分查找，这个就很神了，，，

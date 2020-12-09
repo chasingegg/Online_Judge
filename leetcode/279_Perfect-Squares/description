@@ -1,0 +1,11 @@
+Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.
+给一个正整数n，要求找到最少的平方数，使这些平方数的和等于n
+
+Example 1:
+
+Input: n = 12
+Output: 3 
+Explanation: 12 = 4 + 4 + 4.
+
+-------------------
+

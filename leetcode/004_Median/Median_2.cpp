@@ -4,6 +4,8 @@ Author: Chao Gao
 Lang: C++
 */
 
+// 二分啊大爷。。
+
 #include <vector>
 #include <iostream>
 using namespace std;

@@ -1,0 +1,13 @@
+Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.
+
+You should preserve the original relative order of the nodes in each of the two partitions.
+这道题稍微有点难理解，给一个链表和某个值k，使得链表中小于k的节点
+出现在大于等于k的节点之前，原来的相关顺序不变
+
+Example:
+
+Input: head = 1->4->3->2->5->2, x = 3
+Output: 1->2->2->4->3->5
+
+-----------
+两个指针向后移动

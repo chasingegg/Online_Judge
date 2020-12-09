@@ -1,0 +1,10 @@
+Given a list of daily temperatures T, return a list such that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.
+
+For example, given the list of temperatures T = [73, 74, 75, 71, 69, 72, 76, 73], your output should be [1, 1, 4, 2, 1, 1, 0, 0].
+给一串温度数组，对于每一天的温度，判断未来再过多少天温度会升高，假如没有升高的天气，则返回0
+
+Note: The length of temperatures will be in the range [1, 30000]. Each temperature will be an integer in the range [30, 100].
+
+---------
+看到题目以后，我觉得始终没能第一时间有一个非暴力的解答，就完全不会想到用栈
+数组从后向前遍历，最后面最先入栈，栈顶元素离我当前元素最近

@@ -1,0 +1,25 @@
+Given a non-empty array of integers, every element appears three times except for one, which appears exactly once. Find that single one.
+所有元素除了一个特殊的只出现一次，其他都出现了三次
+
+Note:
+
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+要求时间复杂度O(N)，空间复杂度O(1)
+
+Example 1:
+
+Input: [2,2,3,2]
+Output: 3
+Example 2:
+
+Input: [0,1,0,1,0,1,99]
+Output: 99
+
+------------------
+这题目真的好难，，额外的空间的做法很简单，但是O(1)的空间真的很难
+
+1. 异或运算，b和a记录值，第一次遇到某个值记在b上，a=0，接着第二次出现，b被清空，记录在a
+上面，第三次出现b和a都被清空。异或是满足交换律和结合律的，结果就是异或真的很神奇。。
+
+2. int型是32位，可以对这每一位进行操作，把每一位的值加起来模3得到的就是只出现一次的数在
+该位的值

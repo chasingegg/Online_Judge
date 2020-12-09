@@ -1,0 +1,21 @@
+Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
+
+Each number in candidates may only be used once in the combination.
+
+给一个候选数组和目标数，要求从候选数组中选出一些数使其之和等于目标数，且候选数组中数的选取不能重复
+但需要注意的是可能候选数组中本身是有重复的
+
+Example 1:
+
+Input: candidates = [10,1,2,7,6,1,5], target = 8,
+A solution set is:
+[
+  [1, 7],
+  [1, 2, 5],
+  [2, 6],
+  [1, 1, 6]
+]
+
+------------
+dfs问题，dfs(candidates, i, target)，需要注意的是如果前一个数和当前
+数相同的，现在不需要进行一次dfs，这样可以避免重复

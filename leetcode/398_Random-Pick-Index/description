@@ -1,0 +1,12 @@
+Given an array of integers with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.
+我们有一个数组(元素有重复)，给出一个数，如果数组里多个entry都符合，随机给出index
+
+int[] nums = new int[] {1,2,3,3,3};
+Solution solution = new Solution(nums);
+
+// pick(3) should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning.
+solution.pick(3);
+
+----------------------------
+Reservior Sampling(蓄水池抽样)
+从流数据里等概率地取出K个数，假设现在读到第N个元素，然后有K/N的概率加入到蓄水池中，如果要加入这个元素，从蓄水池中随机选取元素进行替换。每一个元素被选中的概率就是K/N.

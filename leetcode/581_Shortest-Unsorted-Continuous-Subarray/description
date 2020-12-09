@@ -1,0 +1,12 @@
+Given an integer array, you need to find one continuous subarray that if you only sort this subarray in ascending order, then the whole array will be sorted in ascending order, too.
+
+You need to find the shortest such subarray and output its length.
+给一个数组，要求找到最短的连续子序列，使得把这个子序列排好序以后，整个数组都排好序了
+
+Example 1:
+Input: [2, 6, 4, 8, 10, 9, 15]
+Output: 5
+Explanation: You need to sort [6, 4, 8, 10, 9] in ascending order to make the whole array sorted in ascending order.
+
+-------------
+简单想法就是排好序，跟原来的数组从前面开始比，从后面开始比

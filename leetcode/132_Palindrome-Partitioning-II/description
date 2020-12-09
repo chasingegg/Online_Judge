@@ -1,0 +1,13 @@
+Given a string s, partition s such that every substring of the partition is a palindrome.
+
+Return the minimum cuts needed for a palindrome partitioning of s.
+把一个字符串分成几个子串，要求最少，使得这些子串都是回文串
+
+Example:
+
+Input: "aab"
+Output: 1
+Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cut.
+
+------------
+搞个table[i][j]记录i到j的串是否是回文串

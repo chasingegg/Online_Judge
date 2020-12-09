@@ -1,0 +1,16 @@
+You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
+给一个数组，返回数组每一个数右边比它小的数的个数
+
+Example:
+
+Input: [5,2,6,1]
+Output: [2,1,1,0] 
+Explanation:
+To the right of 5 there are 2 smaller elements (2 and 1).
+To the right of 2 there is only 1 smaller element (1).
+To the right of 6 there is 1 smaller element (1).
+To the right of 1 there is 0 smaller element.
+
+-------------------
+用暴力做法似乎很简单，也就O(n^2)的复杂度，居然也过了
+归并排序，O(nlogn)

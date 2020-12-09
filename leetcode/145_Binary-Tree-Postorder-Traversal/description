@@ -1,0 +1,22 @@
+Given a binary tree, return the postorder traversal of its nodes' values.
+二叉树的后序遍历
+
+Example:
+
+Input: [1,null,2,3]
+   1
+    \
+     2
+    /
+   3
+
+Output: [3,2,1]
+Follow up: Recursive solution is trivial, could you do it iteratively?
+
+--------------
+后序遍历的非递归有难度
+1. 所有节点都会先入栈，只需要在出栈之前，将该节点视作根节点，并检查右子树是否已经被访问即可，
+如果不存在右子树，或右子树已经被访问了，那么可以访问根节点，并检查其右子树是否已经被访问，
+如果没访问，先转向，使其右节点成为左节点，等着它先被访问之后，再来访问根节点
+2. 还有一种奇技淫巧，前序遍历的非递归形式很简单，根-左-右，而后序是左-右-根，可以视作根-右-左
+的反向输出

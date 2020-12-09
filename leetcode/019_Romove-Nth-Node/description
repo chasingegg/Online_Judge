@@ -1,0 +1,11 @@
+Given a linked list, remove the n-th node from the end of list and return its head.
+很直白了，也不用咋翻译了
+
+Example:
+
+Given linked list: 1->2->3->4->5, and n = 2.
+
+After removing the second node from the end, the linked list becomes 1->2->3->5.
+
+could you do this in one pass?
+用两个指针，一个指针先走n步，一个指针指在头部，然后两个指针一起走，要是那个先走的指针到达尾部了，那么后面的指针也就在对应要删除的位置上

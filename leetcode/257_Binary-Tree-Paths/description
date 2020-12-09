@@ -1,0 +1,22 @@
+Given a binary tree, return all root-to-leaf paths.
+
+Note: A leaf is a node with no children.
+要求返回所有从根到叶子的路径
+
+Example:
+
+Input:
+
+   1
+ /   \
+2     3
+ \
+  5
+
+Output: ["1->2->5", "1->3"]
+
+Explanation: All root-to-leaf paths are: 1->2->5, 1->3
+
+--------------
+其实easy题不一定就真的有多easy
+void dfs(TreeNode *root, string pre_string, vector<string>& final_result)

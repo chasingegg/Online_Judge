@@ -1,0 +1,16 @@
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+给三对括号，返回符合要求的所有情况
+
+For example, given n = 3, a solution set is:
+
+[
+  "((()))",
+  "(()())",
+  "(())()",
+  "()(())",
+  "()()()"
+]
+
+------------------
+从左到右，左括号的数量一直大于等于右括号的数量
+dfs

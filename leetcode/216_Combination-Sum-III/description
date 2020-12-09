@@ -1,0 +1,17 @@
+Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.
+
+Note:
+
+All numbers will be positive integers.
+The solution set must not contain duplicate combinations.
+
+给一个k，和目标数，要求从1到9之间选取部分数使其和等于目标数，要求选取
+的这部分数没有重复
+
+Example 1:
+
+Input: k = 3, n = 7
+Output: [[1,2,4]]
+
+-------------------
+dfs问题

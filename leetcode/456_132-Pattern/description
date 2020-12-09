@@ -1,0 +1,24 @@
+Given a sequence of n integers a1, a2, ..., an, a 132 pattern is a subsequence ai, aj, ak such that i < j < k and ai < ak < aj. Design an algorithm that takes a list of n numbers as input and checks whether there is a 132 pattern in the list.
+
+给一串序列，132 pattern指的是有一个子序列a_i, a_j, a_k, i<j<k, a_i<a_k<a_j 
+
+Example 1:
+Input: [1, 2, 3, 4]
+
+Output: False
+
+Explanation: There is no 132 pattern in the sequence.
+Example 2:
+Input: [3, 1, 4, 2]
+
+Output: True
+
+Explanation: There is a 132 pattern in the sequence: [1, 4, 2].
+
+---------------
+1. 对于i位置的数，用mins[i]记录0到i-1中小于nums[i]的最小的数，
+然后以中间的数作为基准，从后面找小于中间数大于mins[i]的数
+
+2. stack-sortable permutation，不包含231 pattern就可以用栈来排序
+所以我们可以倒序来找231 pattern
+https://en.wikipedia.org/wiki/Stack-sortable_permutation  

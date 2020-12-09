@@ -1,0 +1,13 @@
+Given a linked list, determine if it has a cycle in it.
+
+To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list.
+为了表示链表是否有环，用pos表示index，index=-1则无环
+
+Example 1:
+
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where tail connects to the second node.
+
+----------------
+快慢指针，一个走两步，一个走一步，假如有环他们会相遇

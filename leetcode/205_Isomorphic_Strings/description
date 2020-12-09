@@ -1,0 +1,12 @@
+Given two strings s and t, determine if they are isomorphic(同构的)
+两字符串是同构就是如果给字符定义一种映射关系，s可以转换成t
+
+Input: s = "egg", t = "add"
+Output: true
+
+Input: s = "foo", t = "bar"  o->a和o->r的映射关系冲突了
+Output: false  
+
+这还是去某公司面试的时候的面试题。虽然当时出现了各种bug
+但其实很简单，记录一下某字符的映射关系，如果下次再出现，看对方数组的字符和之前记录下来的映射是不是一样
+注意这是双向的，两边都要记映射关系

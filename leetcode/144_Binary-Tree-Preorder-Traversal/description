@@ -1,0 +1,18 @@
+
+Given a binary tree, return the preorder traversal of its nodes' values.
+前序遍历
+
+Example:
+
+Input: [1,null,2,3]
+   1
+    \
+     2
+    /
+   3
+
+Output: [1,2,3]
+Follow up: Recursive solution is trivial, could you do it iteratively?
+
+-------------
+非递归，将root压栈，然后每从栈里弹出一个节点，先把右儿子压栈，再把左儿子压栈

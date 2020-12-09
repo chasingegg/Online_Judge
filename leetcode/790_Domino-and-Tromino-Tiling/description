@@ -1,0 +1,24 @@
+We have two types of tiles: a 2x1 domino shape, and an "L" tromino shape. These shapes may be rotated.
+
+XX  <- domino
+
+XX  <- "L" tromino
+X
+Given N, how many ways are there to tile a 2 x N board? Return your answer modulo 10^9 + 7.
+
+两种形状的方块，组成2*N的长方形有几种方式
+
+Example:
+Input: 3
+Output: 5
+Explanation: 
+The five different ways are listed below, different letters indicates different tiles:
+XYZ XXZ XYY XXY XYY
+XYZ YYZ XZZ XYY XXY
+
+----------------
+dp问题，转移的方式，n列的情况考虑n-1列，n-2列...等的情况
+可以用一维数组dp[]做，转移方程复杂一些，dp[i]=dp[i-1]+dp[i-2]+2(dp[i-3]+...+dp[0])
+最后可以推导到dp[i] = 2*dp[i-1]+dp[i-3]
+也可以用二维数组dp[][]来做，dp[i][0]表示第i列满，dp[i][1]表示第i列有一个块
+

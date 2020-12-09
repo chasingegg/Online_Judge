@@ -1,0 +1,32 @@
+Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
+
+Basically, the deletion can be divided into two stages:
+
+Search for a node to remove.
+If the node is found, delete the node.
+Note: Time complexity should be O(height of tree).
+在BST里面删除一个节点，返回调整后的BST
+
+root = [5,3,6,2,4,null,7]
+key = 3
+
+    5
+   / \
+  3   6
+ / \   \
+2   4   7
+
+Given key to delete is 3. So we find the node with value 3 and delete it.
+
+One valid answer is [5,4,6,2,null,null,7], shown in the following BST.
+
+    5
+   / \
+  4   6
+ /     \
+2       7
+
+-------------
+事实证明树相关的东西还是要好好搞啊，别以为都懂了
+删除的节点没有儿子或只有一个儿子的时候非常简单，假如删除的节点的有两个儿子，
+可以找到右子树中最小的节点接任被删除节点的位置

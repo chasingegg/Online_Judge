@@ -1,0 +1,20 @@
+Suppose you have a random list of people standing in a queue. Each person is described by a pair of integers (h, k), where h is the height of the person and k is the number of people in front of this person who have a height greater than or equal to h. Write an algorithm to reconstruct the queue.
+一串数组，[h, k]h表示高度，k表示站在前面的但是高度大于等于当前高度的数量，将这个数组
+按照这个要求重新排好序
+
+Note:
+The number of people is less than 1,100.
+
+ 
+Example
+
+Input:
+[[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]
+
+Output:
+[[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
+
+----------------
+按照高度从高到低排好序，如果相等那么k大的排在后面
+逐个放入结果里，如果当前index小于等于k，push back，否则insert到正确位置
+因为先把高度高的放好了，新插入的数据不会对已经排好序的数组产生影响

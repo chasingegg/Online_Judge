@@ -1,0 +1,18 @@
+Given a singly linked list, determine if it is a palindrome.
+给一个链表，判断是否是回文的，如何在O(1)的空间和O(n)的时间做到
+
+Example 1:
+
+Input: 1->2
+Output: false
+Example 2:
+
+Input: 1->2->2->1
+Output: true
+Follow up:
+Could you do it in O(n) time and O(1) space?
+
+-------------
+就是想不出来，真的是笨死了，要把指针和dp相关的全部做一遍
+两个指针，一个走一步，一个走两步，走两步的到底了，走一步的在一半
+然后这时候前面一半的链表反转了一下，然后正好他们可以开始进行比较

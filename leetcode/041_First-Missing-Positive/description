@@ -1,0 +1,23 @@
+Given an unsorted integer array, find the smallest missing positive integer.
+
+Example 1:
+
+Input: [1,2,0]
+Output: 3
+Example 2:
+
+Input: [3,4,-1,1]
+Output: 2
+Example 3:
+
+Input: [7,8,9,11,12]
+Output: 1
+
+Note:
+
+Your algorithm should run in O(n) time and uses constant extra space
+
+---------
+假如不是O(1)空间复杂度这个限制，那其实我会开一个O(n)的数组用下标index来表示数字index+1是否
+出现过，但现在只能是O(1)的空间复杂度，那我会把原数组的空间利用上
+首先把所有负数变成0，这样整个数组都是非负了，然后标记某数字代表的下标为相反数，

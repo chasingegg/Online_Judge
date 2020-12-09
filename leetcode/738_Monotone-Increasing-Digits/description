@@ -1,0 +1,18 @@
+Given a non-negative integer N, find the largest number that is less than or equal to N with monotone increasing digits.
+
+(Recall that an integer has monotone increasing digits if and only if each pair of adjacent digits x and y satisfy x <= y.)
+给出一个非负整数N，给出小于等于N的最大整数，满足每个数字单调不减的特质
+
+Example 1:
+Input: N = 10
+Output: 9
+Example 2:
+Input: N = 1234
+Output: 1234
+Example 3:
+Input: N = 332
+Output: 299
+
+-----------
+一旦发现当前数字比前一个小的时候，就把前一个减一，然后一直往前看
+减了以后是否比再前面一个大，一旦发现过后，之后的数字都会是9

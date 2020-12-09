@@ -1,0 +1,17 @@
+Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+
+Find all the elements of [1, n] inclusive that do not appear in this array.
+
+Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
+给一个大小为n的数组，里面的数的范围是从1到n，求1，2..n中没有出现的数字
+
+Example:
+
+Input:
+[4,3,2,7,8,2,3,1]
+
+Output:
+[5,6]
+
+-----------
+自己还是太笨了，如何用原先输入的数组来做到hashmap的效果呢，求负数！！

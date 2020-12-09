@@ -1,0 +1,16 @@
+
+Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
+给一个int型的数组，找到最大连续数排列的数组的长度
+
+Your algorithm should run in O(n) complexity.
+
+Example:
+
+Input: [100, 4, 200, 1, 3, 2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
+--------------
+1. 排好序算最大连续序列，一个小点是需要考虑重复数字出现的情况
+2. 使用哈希表，对每个数num，如果num-1不在哈希表里，就一路向右看是否
+存在num+1，这时的时间复杂度为O(n)

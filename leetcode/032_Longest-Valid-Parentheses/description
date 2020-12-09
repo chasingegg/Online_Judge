@@ -1,0 +1,18 @@
+Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+求最长符合要求的括号长度
+
+Example 1:
+
+Input: "(()"
+Output: 2
+Explanation: The longest valid parentheses substring is "()"
+Example 2:
+
+Input: ")()())"
+Output: 4
+Explanation: The longest valid parentheses substring is "()()"
+
+------------
+暴力两个for循环超时
+使用dp，dp[i]表示结束字符在nums[i]上的最长字符串的长度，所以nums[i]='('的时候，
+dp[i]一定是0

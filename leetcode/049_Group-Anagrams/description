@@ -1,0 +1,16 @@
+Given an array of strings, group anagrams together.
+
+Example:
+
+Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+Output:
+[
+  ["ate","eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+
+-----------------
+想法就是给字符串内部排个序，这样调换顺序的就能找到。
+一个小点就是可以用计数排序，因为字母只有26个，开个26大小的数组就可以记录下来
+实现一个O(N)复杂度的算法

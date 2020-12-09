@@ -1,0 +1,33 @@
+Given a binary tree, determine if it is a valid binary search tree (BST).
+
+Assume a BST is defined as follows:
+
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+验证一个二叉树是否是二叉查找树
+
+Example 1:
+
+    2
+   / \
+  1   3
+
+Input: [2,1,3]
+Output: true
+Example 2:
+
+    5
+   / \
+  1   4
+     / \
+    3   6
+
+Input: [5,1,4,null,null,3,6]
+Output: false
+Explanation: The root node's value is 5 but its right child's value is 4.
+
+-----------------
+一开始想的是计算右边最小和左边最大，但其实这样会非常复杂，其实问题一开始可视为
+root只要MIN和MAX之间就符合，然后看左子树的时候调整MAX为root->val，看右子树的时候调整MIN为root->val即可
+中序遍历，看是不是从小到大排列

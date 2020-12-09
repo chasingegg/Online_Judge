@@ -1,0 +1,11 @@
+Given a collection of intervals, merge all overlapping intervals.
+给出一些区间，把一些overlap的区间合并起来，
+
+Example 1:
+
+Input: [[1,3],[2,6],[8,10],[15,18]]
+Output: [[1,6],[8,10],[15,18]]
+Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
+
+--------------
+这道题还算是简单的，就是先按照start来排一下序，然后往下遍历，看是否能合并在一起

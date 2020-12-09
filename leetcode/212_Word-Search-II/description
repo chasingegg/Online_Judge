@@ -1,0 +1,21 @@
+Given a 2D board and a list of words from the dictionary, find all words in the board.
+
+Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+
+-----------------
+Example 
+
+Input: 
+words = ["oath","pea","eat","rain"] and board =
+[
+  ['o','a','a','n'],
+  ['e','t','a','e'],
+  ['i','h','k','r'],
+  ['i','f','l','v']
+]
+
+Output: ["eat","oath"]
+
+给出一些词汇，看看能不能在矩阵找到一条通路正好组成词汇
+
+可以对每一个词汇对矩阵进行dfs来找是否存在，但是这样好像时间复杂度太高了。用给出的词汇先构建出一课字典树，然后在dfs的时候就可以查是否已经找到了某个词汇。

@@ -1,0 +1,13 @@
+Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
+
+给一个数组，每个数字代表最大能跳的步数，问跳到最后的最少步数
+
+Example:
+
+Input: [2,3,1,1,4]
+Output: 2
+Explanation: The minimum number of jumps to reach the last index is 2.
+    Jump 1 step from index 0 to 1, then 3 steps to the last index.
+
+-------------------------
+每个数字i可以顾及[i+1, i+nums[i]]的范围

@@ -1,0 +1,19 @@
+Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
+给出二维平面，求落在同一条直线的最多点的个数
+
+Example 1:
+
+Input: [[1,1],[2,2],[3,3]]
+Output: 3
+Explanation:
+^
+|
+|        o
+|     o
+|  o  
++------------->
+0  1  2  3  4
+
+--------------
+最大的一个坑点就是有重复的点
+搞一个O(n2)的循环，斜率相等的用个哈希表存着

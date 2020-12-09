@@ -1,0 +1,17 @@
+Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+
+Find all the elements that appear twice in this array.
+
+Could you do it without extra space and in O(n) runtime?
+给一个大小为n的数组，数组中的每个数的大小范围是1到n，有些数出现两次，有些出现一次，
+找出所有出现两次的数
+
+Example:
+Input:
+[4,3,2,7,8,2,3,1]
+
+Output:
+[2,3]
+
+-----------
+出现一次就把index为这个数的位置相反数一波，假如操作之前小于0则已经出现了一次，加入到结果中

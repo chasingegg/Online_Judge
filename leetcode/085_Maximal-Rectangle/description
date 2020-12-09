@@ -1,0 +1,18 @@
+Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
+
+给一个0 1矩阵，返回只有1的最大区域的面积
+
+Example:
+
+Input:
+[
+  ["1","0","1","0","0"],
+  ["1","0","1","1","1"],
+  ["1","1","1","1","1"],
+  ["1","0","0","1","0"]
+]
+Output: 6
+
+---------------
+看起来像是一个简单dp，但真的有点难。
+可以用084题中计算直方图最大矩形面积来做

@@ -1,0 +1,20 @@
+Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
+
+Note: The solution set must not contain duplicate subsets.
+给出一个可能有重复数字的序列，给出所有的子集
+
+Example:
+
+Input: [1,2,2]
+Output:
+[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
+
+---------------------
+关注子集的生成过程，其实是一个叠加的过程，比如1，2，3 先是[]，接着[1]，接着[2],[1,2]，最后[3],[1,3],[2,3],[1,2,3]本例中需要去除重复部分，注意不是每次都是从头开始叠加即可

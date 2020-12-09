@@ -1,0 +1,18 @@
+Given an integer matrix, find the length of the longest increasing path.
+
+From each cell, you can either move to four directions: left, right, up or down. You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed).
+
+-----------------
+Example 1:
+
+Input: nums = 
+[
+  [9,9,4],
+  [6,6,8],
+  [2,1,1]
+] 
+Output: 4 
+Explanation: The longest increasing path is [1, 2, 6, 9].
+
+---------------
+想法很简单，就是搜索，但是如果是对于矩阵中的每一点都进行一次dfs那无疑是非常耗时的，可以在搜索过程中存储从某点开始最长路径的结果，之后再找这个点的时候就不用再搜索了

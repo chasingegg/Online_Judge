@@ -1,0 +1,18 @@
+Given a string s, partition s such that every substring of the partition is a palindrome.
+
+Return all possible palindrome partitioning of s.
+partition一个字符串，使得分好的字符串都是回文字符串
+
+Example:
+
+Input: "aab"
+Output:
+[
+  ["aa","b"],
+  ["a","a","b"]
+]
+
+------------
+dfs
+vector<vector<string>>作为全局变量，vector<string>作为每一次加入的case，
+index标明当前位置，假如index=s.size()就停止，否则继续深搜
